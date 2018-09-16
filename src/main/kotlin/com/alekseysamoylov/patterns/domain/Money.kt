@@ -1,9 +1,10 @@
 package com.alekseysamoylov.patterns.domain
 
 import java.math.BigDecimal
-import java.util.*
 
-
+/**
+ * Static Factory Method example
+ */
 class Money private constructor(val amount: BigDecimal, private val currency: String = "$") {
 
   companion object {
