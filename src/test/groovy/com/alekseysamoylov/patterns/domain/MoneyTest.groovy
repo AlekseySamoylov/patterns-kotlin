@@ -21,6 +21,8 @@ class MoneyTest extends Specification {
     def "Should get default Money instance"() {
         when:
         Money result = Money.create()
+
+        then:
         result != null
         result.amount == BigDecimal.ZERO
     }
